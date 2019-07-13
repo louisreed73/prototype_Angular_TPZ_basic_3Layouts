@@ -1,25 +1,6 @@
-@import '~bootstrap/scss/bootstrap.scss';
-@import '_variables.scss';
-
-
-
-$color:purple;
-
-
-
-body {
-    background:$color;
-    color:white;
-      font-family: 'quicksand_lightregular';
-
-
-}
-
-.img {
-    background:url(../imgs/img1.png) no-repeat center / contain;
-    height:300px;
-    transition:all 1s ease-in-out;
-    display:flex;
-}
-
+@import './estilo-mobile.scss';
+@import './estilo-tabletP.scss';
+@import './estilo-tabletL.scss';
+@import './estilo-desktopM.scss';
+@import './estilo-desktopL.scss';
 
