@@ -2,10 +2,6 @@ const path=require('path');
 const HtmlWebpackPlugin=require('html-webpack-plugin');
 const webpack=require('webpack');
 
-
-
-
-
 module.exports={
     entry:{
         // estilo:'./src/js/estilo.js',
@@ -28,9 +24,7 @@ module.exports={
                 loader:'file-loader',
                 options:{
                     name:'[path][name].[ext]',
-                    // context: path.resolve(__dirname, './images'),
                     context: 'src',
-                    // outputPath:'imgs/',
                     publicPath: "../"
                 }
             },
@@ -39,9 +33,6 @@ module.exports={
                 exclude:/node_modules/,
                 loader: "babel-loader"
             }
-            
-    
-          
 
         ]
     },

@@ -39,39 +39,3 @@ body {
     font-size:.7em;
     cursor:pointer;
 };
-
-
-$lista:(
-    h1 50px red,
-    p 10px gold,
-    h5 10px purple,
-    h3 10px darkred
-);
-
-
-@each $el,$size,$col in $lista {
-
-    #{$el} {
-        font-size:$size;
-        color:$col;
-    }
-
-}
-
-$max:17;
-
-@for $i from 1 to $max {
-
-$act:$max - $i;
-$norm:$i;
-$w:percentage( $act / ($max - 1 ));
-$fin:(100% - $w)  / 2;
-
-.c-#{$i} {
-    height:20px;
-    background:darken(red,$fin);
-    // width:$fin;
-}
-
-
-};
