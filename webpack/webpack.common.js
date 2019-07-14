@@ -13,8 +13,8 @@ module.exports={
     },
     output:{
         filename:"js/[name].js",
-        chunkFilename:"js/[name]-shared.js"
-        // path:path.resolve(__dirname,"../dist"),
+        chunkFilename:"js/[name]-shared.js",
+        // path:path.resolve(__dirname,"dist"),
         // publicPath:'../dist'
     },
     module:{
@@ -27,9 +27,11 @@ module.exports={
                 test:/\.(svg|gif|png|jpe?g)$/,
                 loader:'file-loader',
                 options:{
-                    name:'[name].[ext]',
-                    outputPath:'imgs/',
-                    publicPath: "../imgs"
+                    name:'[path][name].[ext]',
+                    // context: path.resolve(__dirname, './images'),
+                    context: 'src',
+                    // outputPath:'imgs/',
+                    publicPath: "../"
                 }
             },
             {
@@ -37,6 +39,7 @@ module.exports={
                 exclude:/node_modules/,
                 loader: "babel-loader"
             }
+            
     
           
 

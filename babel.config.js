@@ -1,4 +1,4 @@
-const presets = [
+ const presets = [
     [
         "@babel/env",
         {
@@ -11,9 +11,13 @@ const presets = [
                 "ie":"10",
                 "ie":"11"
             },
-            useBuiltIns: "usage",
+            useBuiltIns: "usage"
         },
     ],
 ];
 
-module.exports = { presets };
+module.exports = { presets }; 
+
+
+
+
