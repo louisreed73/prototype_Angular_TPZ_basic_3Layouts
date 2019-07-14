@@ -4,14 +4,11 @@ const webpack=require('webpack');
 
 module.exports={
     entry:{
-        // estilo:'./src/js/estilo.js',
         bundle:'./src/js/index.js'
     },
     output:{
         filename:"js/[name].js",
         chunkFilename:"js/[name]-shared.js",
-        // path:path.resolve(__dirname,"dist"),
-        // publicPath:'../dist'
     },
     module:{
         rules:[
