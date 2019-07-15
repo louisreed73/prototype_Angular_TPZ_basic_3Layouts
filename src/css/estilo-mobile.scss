@@ -1,41 +1,15 @@
-@import '~bootstrap/scss/bootstrap.scss';
+// @import '~bootstrap/scss/bootstrap.scss';
 @import '_variables.scss';
 
 
-
-
-
-
-$color:purple;
-
-
-
 body {
-    background:$color;
+    font-family: 'quicksand_lightregular';
     color:white;
-      font-family: 'quicksand_lightregular';
-
-
 }
 
-.img {
-    background:url(../imgs/coches/img2.png) no-repeat center / contain;
-    height:300px;
-    transition:all 1s ease-in-out;
-    display:flex;
-}
 
-.fa-check {
-    color:lightblue;
-    margin-left: 20px;
-    // vertical-align: sub;
-    font-size:.7em;
-    cursor:pointer;
-}
-.fa-angle-left {
-    color:gold;
-    margin-left: 20px;
-    // vertical-align: sub;
-    font-size:.7em;
-    cursor:pointer;
-};
+
+
+
+
+
