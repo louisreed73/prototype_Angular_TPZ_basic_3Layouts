@@ -8,7 +8,7 @@ library.add(faCheck);
 library.add(faAngleLeft);
 dom.watch(); */
 
-import '../css/estilo.scss';
+import '../scss/commonSCSS/estilo.scss';
 
 import '../imgs/coches/img2.png';
 import '../imgs/img1.png';
