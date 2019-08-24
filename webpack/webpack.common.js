@@ -25,28 +25,30 @@ module.exports = {
                     publicPath: "../"
                 }
             },
-              {
+            {
                 test: /\.m?js$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
                     loader: 'babel-loader',
                     options: {
                         presets: [
-                            '@babel/preset-env',
-                             {
-                                useBuiltIns: "usage"
-                            }
+                            [
+                                "@babel/env", {
+
+                                    useBuiltIns: "usage"
+                                }
+                            ]
                         ],
                         plugins: [
                             [
-                                "@babel/plugin-proposal-pipeline-operator", {
-                                    "proposal": "minimal"
+                                '@babel/plugin-proposal-pipeline-operator', {
+                                    proposal: "minimal"
                                 }
                             ]
                         ]
                     }
                 }
-            } 
+            }
 
         ]
     },

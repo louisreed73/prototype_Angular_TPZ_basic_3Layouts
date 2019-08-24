@@ -36,10 +36,7 @@ module.exports = merge(common, {
 
         ]
     },
-/*     entry: {
-        bundle: './src/js/index.js',
-        contact: './src/js/contact.js',
-    }, */
+
     optimization:{
         splitChunks: {
             cacheGroups: {

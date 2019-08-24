@@ -20,7 +20,24 @@ let {log,dir,table,timeEnd,time}=console;
 
 log("Pagina CONTACT!!!!!")
 
+function doble(str) {
+    return str + ", " + str;
+}
+function cap(str) {
+    return str[0].toUpperCase() + str.substring(1);
+}
 
+function exc(str) {
+    return str.replace(/$/, "!!!!!!");
+}
+function el(str) {
+    return (str.replace(/^/, "<p>")).replace(/$/, "</p>");
+}
+let cadena = "luis";
+
+let string = cadena |> doble |> cap |> exc |> el;
+
+log(string)
 
 
 
