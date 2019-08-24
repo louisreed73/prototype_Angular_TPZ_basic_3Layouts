@@ -6,12 +6,13 @@ const MiniCssExtractPlugin=require("mini-css-extract-plugin");
 
 module.exports = {
     entry: {
-        bundle: './src/js/index.js',
-        contact: './src/js/contact.js'
+        bundle: './src/assets/js/index.js',
+        contact: './src/assets/js/contact.js',
+        sobremi: './src/assets/js/sobremi.js'
     },
     output: {
-        filename: "js/[name].js",
-        chunkFilename: "js/[name]-shared.js"
+        filename: "assets/js/[name].js",
+        chunkFilename: "assets/js/[name]-shared.js"
     },
     module: {
         rules: [
@@ -95,13 +96,18 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            filename: "contact.html", template: "./src/contact.html",
+            filename: "contact/contact.html", template: "./src/contact/contact.html",
             // inject:true,
             chunks: ["contact"]
         }),
+        new HtmlWebpackPlugin({
+            filename: "sobremi/sobremi.html", template: "./src/sobremi/sobremi.html",
+            // inject:true,
+            chunks: ["sobremi"]
+        }),
         new webpack.ProvidePlugin({$: 'jquery'}),
 
-        new MiniCssExtractPlugin({filename: "css/[name].css"})
+        new MiniCssExtractPlugin({filename: "assets/css/[name].css"})
 
     ]
 }

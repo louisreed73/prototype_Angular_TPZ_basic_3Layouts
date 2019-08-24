@@ -6,7 +6,8 @@ module.exports=merge(common,{
     mode: "development",
     devServer: {
         // port: 3000,
-        index: 'index.html'
+        // contentBase:"src",
+        index: 'sobremi/sobremi.html'
     },
     devtool:"inline-source-map",
 
