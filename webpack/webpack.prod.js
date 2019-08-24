@@ -1,4 +1,3 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin"); 
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const uglify=require('uglifyjs-webpack-plugin');
@@ -14,28 +13,11 @@ function recursiveIssuer(m) {
     }
 }
 
-
 module.exports = merge(common, {
 
     
     mode:"production",
     // devtool:'source-map',
-    module: {
-        rules: [
-
-            {
-                test: /\.s?css$/,
-                use: [
-                    { loader: MiniCssExtractPlugin.loader, options: { sourceMap: true } },
-                    { loader: 'css-loader', options: { sourceMap: true } },
-                    { loader: 'postcss-loader', options: { sourceMap: true } },
-                    { loader: 'sass-loader', options: { sourceMap: true } }
-                ]
-            }
-
-
-        ]
-    },
 
     optimization:{
         splitChunks: {
@@ -62,13 +44,6 @@ module.exports = merge(common, {
         ]
     },
 
-    plugins:[
-        new MiniCssExtractPlugin({
-            filename: "css/[name].css",
-            // chunkFilename: '[id].css',
-        })
-
-    ]
 
 
 })

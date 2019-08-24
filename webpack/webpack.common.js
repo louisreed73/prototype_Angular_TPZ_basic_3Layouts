@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
+const MiniCssExtractPlugin=require("mini-css-extract-plugin");
+
 
 module.exports = {
     entry: {
@@ -24,8 +26,32 @@ module.exports = {
                     context: 'src',
                     publicPath: "../"
                 }
-            },
-            {
+            }, {
+                test: /\.s?css$/,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            sourceMap: true
+                        }
+                    }, {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }, {
+                        loader: 'postcss-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }, {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }
+                ]
+            }, {
                 test: /\.m?js$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
@@ -73,7 +99,9 @@ module.exports = {
             // inject:true,
             chunks: ["contact"]
         }),
-        new webpack.ProvidePlugin({$: 'jquery'})
+        new webpack.ProvidePlugin({$: 'jquery'}),
+
+        new MiniCssExtractPlugin({filename: "css/[name].css"})
 
     ]
 }
