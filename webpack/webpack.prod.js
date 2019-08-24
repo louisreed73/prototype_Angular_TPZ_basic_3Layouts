@@ -4,6 +4,15 @@ const common = require('./webpack.common.js');
 const uglify=require('uglifyjs-webpack-plugin');
 const OptimizeCssAssets=require('optimize-css-assets-webpack-plugin');
 
+function recursiveIssuer(m) {
+    if (m.issuer) {
+        return recursiveIssuer(m.issuer);
+    } else if (m.name) {
+        return m.name;
+    } else {
+        return false;
+    }
+}
 
 
 module.exports = merge(common, {
@@ -27,13 +36,24 @@ module.exports = merge(common, {
 
         ]
     },
+/*     entry: {
+        bundle: './src/js/index.js',
+        contact: './src/js/contact.js',
+    }, */
     optimization:{
-        splitChunks:{
-            chunks:"all",
+        splitChunks: {
             cacheGroups: {
-                styles: {
-                    name: 'styles',
-                    test: /\.css$/,
+                bundleStyles: {
+                    name: 'bundle',
+                    test: (m, c, entry = 'bundle') =>
+                        m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
+                    chunks: 'all',
+                    enforce: true,
+                },
+                contactStyles: {
+                    name: 'contact',
+                    test: (m, c, entry = 'contact') =>
+                        m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
                     chunks: 'all',
                     enforce: true,
                 },
@@ -47,7 +67,8 @@ module.exports = merge(common, {
 
     plugins:[
         new MiniCssExtractPlugin({
-            filename: "css/estilo.css"
+            filename: "css/[name].css",
+            // chunkFilename: '[id].css',
         })
 
     ]

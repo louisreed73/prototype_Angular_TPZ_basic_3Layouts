@@ -5,6 +5,10 @@ const MiniCssExtractPlugin=require("mini-css-extract-plugin");
 module.exports=merge(common,{
 
     mode: "development",
+    devServer: {
+        // port: 3000,
+        index: 'contact.html'
+    },
     // devtool:"inline-source-map",
     module: {
         rules: [

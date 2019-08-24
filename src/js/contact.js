@@ -9,13 +9,18 @@ library.add(faAngleLeft);
 dom.watch(); */
 
 import '../scss/commonSCSS/estilo.scss';
+import '../scss/customPageSCSS/estilo.scss';
+
 
 import '../imgs/coches/img2.png';
 import '../imgs/img1.png';
 
-let { log, dir, table, timeEnd, time } = console;
+let {log,dir,table,timeEnd,time}=console;
 
-log("Pagina INDEX!!!!!");
+
+log("Pagina CONTACT!!!!!")
+
+
 
 
 
