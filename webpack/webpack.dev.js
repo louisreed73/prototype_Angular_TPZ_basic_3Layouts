@@ -9,7 +9,7 @@ module.exports=merge(common,{
         // port: 3000,
         index: 'index.html'
     },
-    // devtool:"inline-source-map",
+    devtool:"inline-source-map",
     module: {
         rules: [
 
