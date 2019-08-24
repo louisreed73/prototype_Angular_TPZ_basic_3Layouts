@@ -7,7 +7,7 @@ module.exports=merge(common,{
     mode: "development",
     devServer: {
         // port: 3000,
-        index: 'contact.html'
+        index: 'index.html'
     },
     // devtool:"inline-source-map",
     module: {
