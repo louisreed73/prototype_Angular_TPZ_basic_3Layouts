@@ -8,4 +8,5 @@ console.log('y también desde estilo saco jQuery: '+$); */
 
 export let pepito=(num)=>{
     console.log(num)
-}
+};
+
