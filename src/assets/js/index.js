@@ -80,12 +80,13 @@ padre.addEventListener("click",function (e){
 
 
 let verita={
-    nombre:"AmadaVero",
+    nombre:"MotherFucker",
     edad:44
 };
 
 let copiaSa=Object.assign({},verita);
 
-log(`quiero copiar a Vero: ${copiaSa}`)
+log(`quiero copiar a algo: ${copiaSa}`)
 log(copiaSa)
+
 
