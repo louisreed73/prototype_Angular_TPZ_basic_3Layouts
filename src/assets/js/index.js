@@ -80,7 +80,7 @@ padre.addEventListener("click",function (e){
 
 
 let verita={
-    nombre:"AmadaVero",
+    nombre:"MotherFucker",
     edad:44
 };
 
