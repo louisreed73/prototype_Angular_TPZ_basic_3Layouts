@@ -1,0 +1,31 @@
+@import 'base/_reset';
+@import 'vendors/_bootstrapGrid';
+@import 'vendors/_navbar';
+@import 'themes/_dark';
+@import 'base/_tipography';
+@import 'pages/_pagina2';
+@import 'layout/_footer';
+@import 'components/componentPrueba';
+
+
+  
+
+  
+
+
+
+
+
+body {
+    font-family: $fuente_light;
+}
+
+.pag2 {
+    max-width:2100px;
+    margin: 0 auto;
+}
+
+
+
+
+

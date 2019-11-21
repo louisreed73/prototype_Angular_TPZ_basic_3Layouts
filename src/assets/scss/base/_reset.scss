@@ -1,1 +1,17 @@
 @import '~bootstrap/scss/bootstrap-reboot';
+
+
+*,
+*:after,
+*:before {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root {
+    font-size:62.58%;
+}
+a:hover {
+    text-decoration:none;
+}

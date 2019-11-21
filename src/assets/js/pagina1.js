@@ -1,6 +1,9 @@
 
 
 import 'bootstrap/js/dist/collapse.js';
-import 'bootstrap/js/dist/carousel.js';
+
+
+
+import '../scss/main_pagina1.scss';
 
 

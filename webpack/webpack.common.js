@@ -7,8 +7,8 @@ const MiniCssExtractPlugin=require("mini-css-extract-plugin");
 module.exports = {
     entry: {
         bundle: './src/assets/js/index.js',
-        contact: './src/assets/js/contact.js',
-        sobremi: './src/assets/js/sobremi.js'
+        pagina1: './src/assets/js/pagina1.js',
+        pagina2: './src/assets/js/pagina2.js'
     },
     output: {
         filename: "assets/js/[name].js",
@@ -88,14 +88,14 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            filename: "contact/contact.html", template: "./src/contact/contact.html",
+            filename: "pagina1/pagina1.html", template: "./src/pagina1/pagina1.html",
             // inject:true,
-            chunks: ["contact"]
+            chunks: ["pagina1"]
         }),
         new HtmlWebpackPlugin({
-            filename: "sobremi/sobremi.html", template: "./src/sobremi/sobremi.html",
+            filename: "pagina2/pagina2.html", template: "./src/pagina2/pagina2.html",
             // inject:true,
-            chunks: ["sobremi"]
+            chunks: ["pagina2"]
         }),
     
 

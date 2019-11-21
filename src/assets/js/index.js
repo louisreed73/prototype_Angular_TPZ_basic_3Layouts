@@ -4,4 +4,4 @@ import 'bootstrap/js/dist/collapse.js';
 
 
 
-import '../scss/home.scss'
+import '../scss/main_pagina0.scss';

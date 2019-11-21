@@ -1,0 +1,7 @@
+.navbar-dark{
+    background:rgb(2, 58, 68);
+}
+
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: rgba(255, 255, 255, 0.9);
+}

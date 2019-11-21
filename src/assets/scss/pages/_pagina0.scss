@@ -1,0 +1,19 @@
+
+
+
+body {
+    font-size:1.5rem;
+    line-height: 1.4;
+}
+
+.row {
+    min-height:800px;
+}
+
+.row > :nth-child(1) {
+    background:rgb(202, 128, 128)
+}
+.row > :nth-child(2) {
+    background:rgb(134, 182, 200);
+}
+

@@ -1,0 +1,45 @@
+
+.c_Prueba {
+    background:rgba(255, 255, 255, 0.459);
+    margin-bottom:2rem;
+    
+    &__title {
+        text-align:center;
+        background:rgb(14, 97, 14);
+        color:white;
+    }
+    &__Content {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:1rem;
+        color:black;
+
+        &__img {
+            flex:none;
+            width:20rem;
+            height:14rem;
+            padding-right:1rem;
+
+            & * {
+                width:100%;
+                height:100%;
+            }
+        }
+        &__text {
+            flex:1;
+            color:inherit;
+        }
+    }
+
+
+
+};
+
+.c_Prueba.c_Prueba--Col {
+    
+    .c_Prueba__Content {
+        flex-flow:column;
+    }
+}
+
