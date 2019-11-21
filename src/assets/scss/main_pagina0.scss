@@ -3,6 +3,7 @@
 @import 'vendors/_navbar';
 @import 'themes/_dark';
 @import 'base/_tipography';
+@import 'layout/_utilities';
 @import 'pages/_pagina0';
 @import 'layout/_footer';
 @import 'components/componentPrueba';
@@ -20,6 +21,9 @@ body {
     font-family: $fuente_light;
 }
 
+.pag0 {
+    margin: 0 auto;
+}
 
 
 
