@@ -97,7 +97,7 @@ module.exports = {
             // inject:true,
             chunks: ["sobremi"]
         }),
-        new webpack.ProvidePlugin({$: 'jquery'}),
+    
 
         new MiniCssExtractPlugin({filename: "assets/css/[name].css"})
 

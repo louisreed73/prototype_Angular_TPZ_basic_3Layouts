@@ -1,0 +1,22 @@
+@import 'base/_reset';
+@import 'vendors/_bootstrapGrid';
+@import 'vendors/navbar';
+@import 'base/tipography';
+
+  
+
+  
+
+
+
+
+body {
+    font-family: $fuente_light;
+    color:$colorDefault;
+    // background-color:gainsboro;
+}
+
+.container {
+    background:gainsboro;
+}
+
