@@ -1,0 +1,28 @@
+@import 'abstracts/variables';
+
+.c_carritoLG{
+    background:lightblue;
+    position:fixed;
+    width:$anchocarritoLG;
+    // z-index:-1;
+    top:0;
+    right:0;
+    height:100vh;
+    display:flex;
+    flex-flow: column;
+    justify-content:space-evenly;
+    align-items:center;
+
+
+
+}
+
+@media only screen and (min-width:1802px) {
+
+    .c_carritoLG {
+            // right: 5%;
+    }
+
+}
+
+

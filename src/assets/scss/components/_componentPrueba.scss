@@ -1,7 +1,10 @@
 
 .c_Prueba {
-    background:rgba(255, 255, 255, 0.459);
+    background:rgba(255, 255, 255, 0.9);
     margin-bottom:2rem;
+    width:100%;
+    display:flex;
+    flex-flow:column;
     
     &__title {
         text-align:center;
@@ -10,6 +13,7 @@
     }
     &__Content {
         display:flex;
+        flex-flow:column;
         justify-content:center;
         align-items:center;
         padding:1rem;
@@ -17,9 +21,10 @@
 
         &__img {
             flex:none;
-            width:20rem;
-            height:14rem;
+            width:6rem;
+            height:auto;
             padding-right:1rem;
+            margin-bottom:2rem;
 
             & * {
                 width:100%;

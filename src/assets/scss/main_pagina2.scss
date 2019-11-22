@@ -2,6 +2,7 @@
 @import 'vendors/_bootstrapGrid';
 @import 'vendors/_navbar';
 @import 'themes/_dark';
+@import 'abstracts/variables';
 @import 'base/_tipography';
 @import 'pages/_pagina2';
 @import 'layout/_footer';
@@ -21,7 +22,7 @@ body {
 }
 
 .pag2 {
-    max-width:2100px;
+    max-width:210rem;
     margin: 0 auto;
 }
 

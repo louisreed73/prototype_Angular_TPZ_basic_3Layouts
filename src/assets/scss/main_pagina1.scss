@@ -2,9 +2,13 @@
 @import 'vendors/_bootstrapGrid';
 @import 'vendors/_navbar';
 @import 'themes/_dark';
+@import 'abstracts/variables';
 @import 'base/_tipography';
 @import 'pages/_pagina1';
 @import 'layout/_footer';
+@import 'components/_component_navMobile';
+@import 'components/_component_mainContent';
+@import 'components/_component_carritoLG';
 @import 'components/componentPrueba';
 
 
@@ -21,7 +25,7 @@ body {
 }
 
 .pag1 {
-    max-width:1800px;
+    max-width:130rem;
     margin: 0 auto;
 }
 
