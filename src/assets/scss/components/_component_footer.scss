@@ -1,0 +1,50 @@
+@import 'abstracts/variables';
+
+$backgFooter1 :rgb(61, 8, 8);
+
+footer {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    min-height:100px;
+    background:$backgFooter1;
+    margin-bottom:$altocarritoLG + $altonavMobile;
+    // margin-left:$anchonavMobile;
+    
+}
+
+
+@media only screen and (min-width:576px) {
+    footer {
+        margin-bottom:$altocarritoLG;
+        margin-left: $anchonavMobile;
+
+    }
+
+
+
+}
+
+
+@media only screen and (min-width:992px) {
+    
+    footer {
+        margin-bottom:initial;
+        margin-left:initial;
+        margin-right:$anchocarritoLG;
+
+    }
+
+} 
+
+@media only screen and (min-width:1302px) {
+    
+    footer {
+        margin-left:auto;
+        margin-right:auto;
+
+    }
+
+} 
+

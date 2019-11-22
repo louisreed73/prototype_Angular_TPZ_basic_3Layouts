@@ -5,10 +5,11 @@
 @import 'abstracts/variables';
 @import 'base/_tipography';
 @import 'pages/_pagina1';
-@import 'layout/_footer';
+@import 'components/component_headerMainNav';
 @import 'components/_component_navMobile';
 @import 'components/_component_mainContent';
 @import 'components/_component_carritoLG';
+@import 'components/component_footer';
 @import 'components/componentPrueba';
 
 
@@ -17,7 +18,9 @@
   
 
 
-
+.row {
+    min-height:initial;
+}
 
 
 body {

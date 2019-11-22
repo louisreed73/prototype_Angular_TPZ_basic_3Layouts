@@ -2,7 +2,7 @@
 
 .c_mainContent{
     background:gainsboro;
-    // display:flex;
+
 
 
 }
@@ -22,10 +22,13 @@
     }
 
 } 
-@media only screen and (min-width:1660px) {
+
+
+@media only screen and (min-width:1802px) {
 
     .c_mainContent {
         width:100%;
+        margin-right:initial;
             margin-left: 0;
     }
 
