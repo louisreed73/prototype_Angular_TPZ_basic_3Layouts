@@ -12,8 +12,7 @@
   "license": "lo que me salga del pijo",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1"
+    "bootstrap": "^4.3.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
