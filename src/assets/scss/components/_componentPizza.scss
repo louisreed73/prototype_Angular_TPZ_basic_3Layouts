@@ -5,6 +5,17 @@
     transition:box-shadow .25s ease-in-out;
     font-size:1.8rem;
 
+    &__icon {
+        display:inline-block;
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-left: .54rem;
+        vertical-align: baseline;
+        /* line-height: 1.8rem; */
+        position: relative;
+        top: .1rem;
+    }
+
     &:hover {
         box-shadow: $sombraCajaComp;
     }
@@ -24,6 +35,9 @@
 
 &__nombre {
     font-weight:600;
+    display: inline-block;
+
+    
     
 }
 &__ingred {
