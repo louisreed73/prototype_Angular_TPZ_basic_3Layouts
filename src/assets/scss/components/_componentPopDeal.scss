@@ -1,6 +1,6 @@
 
 
-.c_Deal {
+.c_PopDeal {
     background:rgba(255, 255, 255, 1);
     transition:box-shadow .25s ease-in-out;
     font-size:1.8rem;
@@ -9,25 +9,20 @@
         box-shadow: $sombraCajaComp;
     }
 
-&__Content_image {
-    margin-bottom: 0.5rem;
-    & img {
-        width:100%;
-        height:auto;
-    }
-}
-&__nombre, &__ingred, &__Content_prec {
-    min-height:7rem;
-    padding: 1rem 1rem 0 1rem;
 
+&__nombre, &__ingred, &__Content_prec {
+    min-height:4rem;
+    padding: 1rem 1rem 1rem 1rem;
+    
 }
 
 &__nombre {
+    min-height:7rem;
     font-weight:600;
     
 }
 &__ingred {
-    min-height:$minAlturaIngred;
+    min-height:8.2rem;
     font-size:.8em;
     color:rgba(120, 131, 140,1)
 }
