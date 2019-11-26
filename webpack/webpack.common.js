@@ -6,9 +6,9 @@ const MiniCssExtractPlugin=require("mini-css-extract-plugin");
 
 module.exports = {
     entry: {
-        bundle: './src/assets/js/index.js',
-        pagina1: './src/assets/js/pagina1.js',
-        pagina2: './src/assets/js/pagina2.js'
+        bundle: './src/assets/js/index.js'
+/*         pagina1: './src/assets/js/pagina1.js',
+        pagina2: './src/assets/js/pagina2.js' */
     },
     output: {
         filename: "assets/js/[name].js",
@@ -87,7 +87,7 @@ module.exports = {
             chunks: ["bundle"]
         }),
 
-        new HtmlWebpackPlugin({
+/*         new HtmlWebpackPlugin({
             filename: "pagina1/pagina1.html", template: "./src/pagina1/pagina1.html",
             // inject:true,
             chunks: ["pagina1"]
@@ -97,7 +97,7 @@ module.exports = {
             // inject:true,
             chunks: ["pagina2"]
         }),
-    
+     */
 
         new MiniCssExtractPlugin({filename: "assets/css/[name].css"})
 

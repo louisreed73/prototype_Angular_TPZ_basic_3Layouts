@@ -4,4 +4,4 @@
 
 
 
-import '../scss/main_pagina0.scss';
+import '../scss/main_index.scss';

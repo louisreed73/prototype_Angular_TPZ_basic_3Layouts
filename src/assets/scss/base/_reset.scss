@@ -12,7 +12,23 @@
 :root {
     font-size:62.50%;
 }
-a{
+a,
+a:hover,
+a:visited,
+a:focus,
+a:active{
     // text-decoration:none;
     color:inherit;
+    text-decoration: none !important;
+}
+
+[class^='c_'] {
+    width: 100%;
+    // para visualización estas rules:
+    display:block;
+    // background:white;
+
+}
+p {
+    margin-bottom:0;
 }

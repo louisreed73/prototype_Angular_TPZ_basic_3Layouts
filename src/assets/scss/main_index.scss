@@ -4,13 +4,14 @@
 @import 'themes/_dark';
 @import 'abstracts/variables';
 @import 'base/_tipography';
-@import 'pages/_pagina1';
+@import 'pages/_index';
 // @import 'components/component_headerMainNav';
 @import 'components/_component_navMobile';
 @import 'components/_component_mainContent';
 @import 'components/_component_carritoLG';
 @import 'components/component_footer';
 @import 'components/componentPrueba';
+@import 'components/componentDeal';
 
 
   
@@ -28,7 +29,7 @@ body {
 }
 
 .pag1 {
-    max-width:$anchoMaxPag1;
+    max-width:$anchoMaxPagIndex;
     margin: 0 auto;
 }
 
