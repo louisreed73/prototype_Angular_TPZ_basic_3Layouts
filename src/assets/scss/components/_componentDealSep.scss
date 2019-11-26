@@ -1,0 +1,41 @@
+
+
+.c_DealSep {
+    background:transparent;
+    font-size:2.8rem;
+    position:relative;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:flex-end;
+    align-items:center;
+    font-weight: 600;
+    padding: 1rem;
+
+
+
+
+
+
+&__title {
+    flex:none;
+    margin: 0 1.5rem;
+/*     font-size:.8em;
+    color:rgba(120, 131, 140,1) */
+    
+}
+&__rule {
+    flex:1 1 200px;
+    color:white;
+    height: 0.1rem;
+    background:black;
+    &:before {
+        content: "";
+        display: block;
+        height: 1px;
+        border-top: 1px dashed;
+    }
+}
+
+
+}
+

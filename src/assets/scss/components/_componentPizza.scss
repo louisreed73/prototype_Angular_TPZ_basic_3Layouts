@@ -1,6 +1,6 @@
 
 
-.c_Deal {
+.c_Piz {
     background:rgba(255, 255, 255, 1);
     transition:box-shadow .25s ease-in-out;
     font-size:1.8rem;
@@ -17,8 +17,8 @@
     }
 }
 &__nombre, &__ingred, &__Content_prec {
-    min-height:7rem;
-    padding: 1rem 1rem 0 1rem;
+        min-height: 4rem;
+    padding: 0.4rem 1rem 0 1rem;
 
 }
 
@@ -27,7 +27,7 @@
     
 }
 &__ingred {
-    min-height:$minAlturaIngred;
+    min-height:11.2rem;
     font-size:.8em;
     color:rgba(120, 131, 140,1)
 }
@@ -41,30 +41,33 @@
     &_rule {
         position:absolute;
         top:0;
-        width:calc(100% - #{$anchoCajaPrecRule});
         height:.12rem;
+        width:calc(100% - #{$anchoCajaPrecRule});
         background:rgba(220, 220, 220, 1);
         left: #{$anchoCajaPrecRule / 2}
 
 
     }
     
-    &_act, &_ant {
+    &_act, &_desde{
         margin: 0 .8rem;
         display: inline-block;
         width: auto;
         padding:.4rem;
-        border-radius: 1rem;
-        border:1px solid currentColor;
+        // border-radius: 1rem;
+        // border:1px solid currentColor;
     }
     
     &_act{
-        border:1px solid rgba(255, 255, 255, 1);
+        // border:1px solid rgba(255, 255, 255, 1);
     }
 
-    &_ant {
-        color:rgba(255, 0, 0, 1);
-        text-decoration:line-through;
+    &_desde {
+        text-transform: uppercase;
+        font-size: 0.6em;
+        align-self: center;
+        padding-bottom: 0;
+        color: rgba(120, 131, 140, 1);
     }
 
 
