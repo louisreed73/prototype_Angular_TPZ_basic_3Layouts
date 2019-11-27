@@ -51,5 +51,16 @@
 
 } 
 
+@media only screen and (min-width:1350px) {
+
+    .c_navMobile{
+
+    width: calc(1092px + (1300 - 1050) * ((100vw - 1350px) / (1852 - 1350)));
+    max-width: 100%;
+
+    }
+
+} 
+
 
 

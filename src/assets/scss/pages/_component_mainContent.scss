@@ -24,6 +24,17 @@
 } 
 
 
+@media only screen and (min-width:1350px) {
+
+    .c_mainContent {
+        width:100%;
+        width:calc(1092px + (1300 - 1050) * ((100vw - 1350px) / (1852 - 1350)));
+        margin-right:initial;
+            margin-left: 0;
+    }
+
+} 
+
 @media only screen and (min-width:1852px) {
 
     .c_mainContent {

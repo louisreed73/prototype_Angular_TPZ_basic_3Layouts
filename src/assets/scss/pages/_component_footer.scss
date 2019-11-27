@@ -38,6 +38,18 @@ footer {
 
 } 
 
+@media only screen and (min-width:1350px) {
+
+    footer {
+
+    width: calc(1092px + (1300 - 1050) * ((100vw - 1350px) / (1852 - 1350)));
+    max-width: 100%;
+    margin-right: 0;
+
+    }
+
+} 
+
 @media only screen and (min-width:1852px) {
     
     footer {
