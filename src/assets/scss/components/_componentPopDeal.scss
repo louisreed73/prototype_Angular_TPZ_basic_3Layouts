@@ -82,7 +82,27 @@
     .c_PopDeal--noPrecio {
     
         .c_PopDeal__ingred {
-            padding-bottom: 8.9rem;
+            padding-bottom: 7rem;
+    
+        }
+    }
+}
+@media only screen and (min-width:1058px) {
+    
+    .c_PopDeal--noPrecio {
+    
+        .c_PopDeal__ingred {
+            padding-bottom: 7.1rem;
+    
+        }
+    }
+}
+@media only screen and (min-width:1061px) {
+    
+    .c_PopDeal--noPrecio {
+    
+        .c_PopDeal__ingred {
+            padding-bottom: 9rem;
     
         }
     }
