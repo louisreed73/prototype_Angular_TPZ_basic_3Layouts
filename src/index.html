@@ -244,7 +244,7 @@
                                 </div>
                                 <p class="c_Piz__nombre">
                                         Half & Half
-                                        <span class="c_Piz__icon icon--blue"></span>
+                                        <span class="c_Piz__icon back--blue"></span>
                                 </p>
                                 <p class="c_Piz__ingred">
                                         
@@ -271,7 +271,7 @@
                                 </div>
                                 <p class="c_Piz__nombre">
                                         Create Your Own 
-                                        <span class="c_Piz__icon icon--green"></span>
+                                        <span class="c_Piz__icon back--green"></span>
                                 </p>
                                 <p class="c_Piz__ingred">
                                         
@@ -298,7 +298,7 @@
                                 </div>
                                 <p class="c_Piz__nombre">
                                         Any 4 Toppings FREE
-                                        <span class="c_Piz__icon icon--red"></span>
+                                        <span class="c_Piz__icon back--red"></span>
                                 </p>
                                 <p class="c_Piz__ingred">
                                         
@@ -321,8 +321,183 @@
                 
             </div>
 
+
+                <!-- ------------------------------------------------------------
+        Esta caja padre solo tiene funcion lexica de separación el Componente real es el hijo DEAL SEPARATION
+        -------------------------------------------------------------->
+        <div class="separacionComponente row no-gutters mt-3">
+                <!-- solo para layout -->
+                <div class="col-12  px-sm-3 pb-4">
+                    <!-- Componente DEALSEP -Deal Separation- INICIO -->
+                    <div class="c_DealSep">
+                        <p class="c_DealSep__rule">
+                    
+                        </p>
+                        <div class="c_DealSep__img">
+                                <img src="/src/assets/imgs/c_PizSep_img1.png" alt="Img-Pizza-Separation" srcset="">
+                        </div>
+
+                            <p class="c_DealSep__rule">
+                                
+                            </p>
+                    
+                        </div>
+                    <!-- Componente DEALSEP -Deal Separation- FIN -->
+                </div>
+                
+                
+            </div>
+
+
+
+                                    <!-- ------------------------------------------------------------
+            Esta caja padre solo tiene funcion lexica de separación el Componente real es el hijo PIZZA 
+            -------------------------------------------------------------->
+        <div class="separacionComponente row no-gutters mt-3">
+            <!-- solo para layout -->
+            <div class="col-12 col-sm-6 col-md-4  px-3 pb-4">
+                <!-- Componente PIZZACUST -Pizza Custom-  INICIO -->
+                <div  class="c_FoodCust">
+                    <a href="#">
+                            <div class="c_FoodCust__Content_image">
+                                    <img src="/src/assets/imgs/c_Piz_Open_img3.jpg" alt="Deal">
+                                </div>
+                                <p class="c_FoodCust__nombre">
+                                        Super Supreme
+                                        <span class="c_FoodCust__icon back--blue"></span>
+                                </p>
+                                <p class="c_FoodCust__ingred">
+                                        Spicy Pork Sausage, Pepperoni, Spicy Minced Beef, Ham, Onions, Sliced Black Olives, Mushrooms, Mixed Peppers
+                                </p>
+                                <p class="c_SelecInfo">
+                                    Select your size & crust
+                                </p>
+                            </a>
+                            <!-- Necesito esta caja para deshabilitar el href del link -->
+                            <!-- SubComponente SELECT  INICIO -->
+                            <div class="cont_CustPizza">
+                                <select name="" id="select_PizCust_1" class="c_Select back--gainsboro">
+                                    
+                                    <option value="pepperoni-feast-classic-large" selected class="p-4">Large Classic</option><option value="pepperoni-feast-pepperoni-cheesy-bites-large" class="p-4">Large Pepperoni Cheesy Bites</option><option value="pepperoni-feast-cheesy-bites-large" class="p-4">Large Cheesy Bites</option><option value="pepperoni-feast-stuffed-crust-large" class="p-4">Large Stuffed Crust</option><option value="pepperoni-feast-classic-without-garlic-large">Large Classic no Garlic</option><option value="pepperoni-feast-italian-large">Large Italian</option><option value="pepperoni-feast-pan-large">Large Pan</option><option value="pepperoni-feast-classic-medium">Medium Classic</option><option value="pepperoni-feast-classic-without-garlic-medium">Medium Classic no Garlic</option><option value="pepperoni-feast-gluten-free-medium">Medium Gluten-Free</option><option value="pepperoni-feast-classic-small">Small Classic</option><option value="pepperoni-feast-classic-without-garlic-small">Small Classic no Garlic</option>
+                                </select>
+                                <!-- SubComponente SELECT  FIN -->
+                                <!-- SubComponente BUTTON  INICIO -->
+                                <button class="c_Btn back--green">
+                                    Checkout
+                                </button>
+                                <!-- SubComponente BUTTON  FIN -->
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        <!-- Componente PIZZACUST -Pizza Custom- FIN -->
+                    </div>
+            <div class="col-12 col-sm-6 col-md-4  px-3 pb-4">
+                <!-- Componente PIZZACUST -Pizza Custom-  INICIO -->
+                <div  class="c_FoodCust">
+                    <a href="#">
+                            <div class="c_FoodCust__Content_image">
+                                    <img src="/src/assets/imgs/c_Piz_Open_img1.jpg" alt="Deal">
+                                </div>
+                                <p class="c_FoodCust__nombre">
+                                        Margherita
+                                        <span class="c_FoodCust__icon back--green"></span>
+                                </p>
+                                <p class="c_FoodCust__ingred">
+                                        Mozzarella Cheese, Tomato Sauce
+                                </p>
+                                <p class="c_SelecInfo">
+                                    Select your size & crust
+                                </p>
+                            </a>
+                            <!-- Necesito esta caja para deshabilitar el href del link -->
+                            <div class="cont_CustPizza">
+                                <!-- SubComponente SELECT  INICIO -->
+                                <select name="" id="select_PizCust_2" class="c_Select back--gainsboro">
+                                        <option value="margherita-classic-large" selected>Large Classic</option><option value="margherita-pepperoni-cheesy-bites-large">Large Pepperoni Cheesy Bites</option><option value="margherita-cheesy-bites-large">Large Cheesy Bites</option><option value="margherita-stuffed-crust-large">Large Stuffed Crust</option><option value="margherita-classic-without-garlic-large">Large Classic no Garlic</option><option value="margherita-italian-large">Large Italian</option><option value="margherita-pan-large">Large Pan</option><option value="margherita-classic-medium">Medium Classic</option><option value="margherita-classic-without-garlic-medium">Medium Classic no Garlic</option><option value="margherita-gluten-free-medium">Medium Gluten-Free</option><option value="margherita-classic-small">Small Classic</option><option value="margherita-classic-without-garlic-small">Small Classic no Garlic</option>
+                                    </select>
+                                <!-- SubComponente SELECT  FIN -->
+                                <!-- SubComponente BUTTON  INICIO -->
+                                <button class="c_Btn back--green">
+                                    Checkout
+                                </button>
+                                <!-- SubComponente BUTTON  FIN -->
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        <!-- Componente PIZZACUST -Pizza Custom- FIN -->
+                    </div>
+            <div class="col-12 col-sm-6 col-md-4  px-3 pb-4">
+                <!-- Componente PIZZACUST -Pizza Custom-  INICIO -->
+                <div  class="c_FoodCust">
+                    <a href="#">
+                            <div class="c_FoodCust__Content_image">
+                                    <img src="/src/assets/imgs/c_Piz_Open_img2.jpg" alt="Deal">
+                                </div>
+                                <p class="c_FoodCust__nombre">
+                                        Pepperoni Feast
+                                        <span class="c_FoodCust__icon back--green"></span>
+                                </p>
+                                <p class="c_FoodCust__ingred">
+                                        Double Pepperoni, Extra Mozzarella Cheese
+                                </p>
+                                <p class="c_SelecInfo">
+                                    Select your size & crust
+                                </p>
+                            </a>
+                            <!-- Necesito esta caja para deshabilitar el href del link -->
+                            <div class="cont_CustPizza">
+                                <!-- SubComponente SELECT  INICIO -->
+                                <select name="" id="select_PizCust_3" class="c_Select back--gainsboro">
+                                        <option value="pepperoni-feast-classic-large" selected>Large Classic</option><option value="pepperoni-feast-pepperoni-cheesy-bites-large">Large Pepperoni Cheesy Bites</option><option value="pepperoni-feast-cheesy-bites-large">Large Cheesy Bites</option><option value="pepperoni-feast-stuffed-crust-large">Large Stuffed Crust</option><option value="pepperoni-feast-classic-without-garlic-large">Large Classic no Garlic</option><option value="pepperoni-feast-italian-large">Large Italian</option><option value="pepperoni-feast-pan-large">Large Pan</option><option value="pepperoni-feast-classic-medium">Medium Classic</option><option value="pepperoni-feast-classic-without-garlic-medium">Medium Classic no Garlic</option><option value="pepperoni-feast-gluten-free-medium">Medium Gluten-Free</option><option value="pepperoni-feast-classic-small">Small Classic</option><option value="pepperoni-feast-classic-without-garlic-small">Small Classic no Garlic</option>
+                                    </select>
+                                <!-- SubComponente SELECT  FIN -->
+                                <!-- SubComponente BUTTON  INICIO -->
+                                <button class="c_Btn back--green">
+                                    Checkout
+                                </button>
+                                <!-- SubComponente BUTTON  FIN -->
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        <!-- Componente PIZZACUST -Pizza Custom- FIN -->
+                    </div>
+          
+        </div>
+
+                    <!-- ------------------------------------------------------------
+        Esta caja padre solo tiene funcion lexica de separación el Componente real es el hijo DEAL SEPARATION
+        -------------------------------------------------------------->
+        <div class="separacionComponente row no-gutters mt-3">
+                <!-- solo para layout -->
+                <div class="col-12  px-sm-3 pb-4">
+                    <!-- Componente DEALSEP -Deal Separation- INICIO -->
+                    <div class="c_DealSep">
+                            <p class="c_DealSep__rule">
+                       
+                            </p>
+                            <p class="c_DealSep__title">
+                                    Seccion Dipes - Sides
+                            </p>
+    
+                                <p class="c_DealSep__rule">
+                                    
+                                </p>
                         
-      
+                            </div>
+                    <!-- Componente DEALSEP -Deal Separation- FIN -->
+                </div>
+                
+                
+            </div>
+
+                        
+      <!-- Contenedor Main General -->
             </div>
 
             <!-- ASIDE CARRITO -->

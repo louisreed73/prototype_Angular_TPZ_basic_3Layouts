@@ -19,10 +19,22 @@
 &__title {
     flex:none;
     margin: 0 1.5rem;
-/*     font-size:.8em;
-    color:rgba(120, 131, 140,1) */
     
 }
+
+&__img {
+    flex:0 1 60%;
+    margin: 0 1.5rem;
+    min-width:280px;
+    max-width: 550px;
+
+    img {
+        width:100%;
+        height:auto;
+    }
+    
+}
+
 &__rule {
     flex:1 1 200px;
     color:white;
