@@ -1,69 +1,89 @@
-
-
 .c_PopDeal {
-    background:rgba(255, 255, 255, 1);
-    transition:box-shadow .25s ease-in-out;
-    font-size:1.8rem;
+    background: rgba(255, 255, 255, 1);
+    transition: box-shadow .25s ease-in-out;
+    font-size: 1.8rem;
 
     &:hover {
         box-shadow: $sombraCajaComp;
     }
 
 
-&__nombre, &__ingred, &__Content_prec {
-    min-height:4rem;
-    padding: 1rem 1rem 1rem 1rem;
-    
-}
+    &__nombre,
+    &__ingred,
+    &__Content_prec {
+        min-height: 4rem;
+        padding: 1rem 1rem 1rem 1rem;
 
-&__nombre {
-    min-height:7rem;
-    font-weight:600;
-    
-}
-&__ingred {
-    min-height:8.2rem;
-    font-size:.8em;
-    color:rgba(120, 131, 140,1)
-}
-&__Content_prec {
-    position:relative;
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    font-weight: 600;
-    
-    &_rule {
-        position:absolute;
-        top:0;
-        width:calc(100% - #{$anchoCajaPrecRule});
-        height:.1rem;
-        background:rgba(220, 220, 220, 1);
-        left: #{$anchoCajaPrecRule / 2}
+    }
+
+    &__nombre {
+        min-height: 7rem;
+        font-weight: 600;
+
+    }
+
+    &__ingred {
+        min-height: 6.5rem;
+        font-size: .8em;
+        color: rgba(120, 131, 140, 1)
+    }
+
+    &__Content_prec {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-weight: 600;
+
+        &_rule {
+            position: absolute;
+            top: 0;
+            width:calc(100% - #{$anchoCajaPrecRule});
+            height: .1rem;
+            background: rgba(220, 220, 220, 1);
+            left: #{$anchoCajaPrecRule / 2}
+        }
+
+        &_act,
+        &_ant {
+            margin: 0 .8rem;
+            display: inline-block;
+            width: auto;
+            padding: .4rem;
+            border-radius: 1rem;
+            border: 1px solid currentColor;
+        }
+
+        &_act {
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
+
+        &_ant {
+            color: rgba(255, 0, 0, 1);
+            text-decoration: line-through;
+        }
 
 
     }
-    
-    &_act, &_ant {
-        margin: 0 .8rem;
-        display: inline-block;
-        width: auto;
-        padding:.4rem;
-        border-radius: 1rem;
-        border:1px solid currentColor;
-    }
-    
-    &_act{
-        border:1px solid rgba(255, 255, 255, 1);
-    }
-
-    &_ant {
-        color:rgba(255, 0, 0, 1);
-        text-decoration:line-through;
-    }
-
 
 }
 
+.c_PopDeal--noPrecio {
+
+    .c_PopDeal__ingred {
+        padding-bottom: 7rem;
+
+    }
 }
 
+
+@media only screen and (min-width:1044px) {
+    
+    .c_PopDeal--noPrecio {
+    
+        .c_PopDeal__ingred {
+            padding-bottom: 9rem;
+    
+        }
+    }
+}

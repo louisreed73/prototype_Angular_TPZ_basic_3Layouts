@@ -1,13 +1,11 @@
-
-
 .c_DealSep {
-    background:transparent;
-    font-size:2.8rem;
-    position:relative;
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content:flex-end;
-    align-items:center;
+    background: transparent;
+    font-size: 2.8rem;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
     font-weight: 600;
     padding: 1rem;
 
@@ -16,38 +14,38 @@
 
 
 
-&__title {
-    flex:none;
-    margin: 0 1.5rem;
-    
-}
+    &__title {
+        flex: none;
+        margin: 0 1.5rem;
 
-&__img {
-    flex:0 1 60%;
-    margin: 0 1.5rem;
-    min-width:280px;
-    max-width: 550px;
-
-    img {
-        width:100%;
-        height:auto;
     }
-    
-}
 
-&__rule {
-    flex:1 1 200px;
-    color:white;
-    height: 0.1rem;
-    background:black;
-    &:before {
-        content: "";
-        display: block;
-        height: 1px;
-        border-top: 1px dashed;
+    &__img {
+        flex: 0 1 60%;
+        margin: 0 1.5rem;
+        min-width: 280px;
+        max-width: 550px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
     }
-}
+
+    &__rule {
+        flex: 1 1 200px;
+        color: white;
+        height: 0.1rem;
+        background: black;
+
+        &:before {
+            content: "";
+            display: block;
+            height: 1px;
+            border-top: 1px dashed;
+        }
+    }
 
 
 }
-

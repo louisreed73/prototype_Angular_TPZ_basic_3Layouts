@@ -3,7 +3,7 @@
 .c_carritoLG {
         background:lightblue;
         position:fixed;
-        width:100vw;
+        width:100%;
         bottom:0;
         height:$altocarritoLG;
         display:flex;
@@ -16,15 +16,14 @@
 @media only screen and (min-width:576px) {
 
     .c_carritoLG {
-            margin-left: $anchonavMobile;
             background:lightblue;
             position:fixed;
-            width:calc(100vw - #{$anchonavMobile});
+            // width:calc(100vw - #{$anchonavMobile});
             bottom:0;
     }
 
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:960px) {
 
     .c_carritoLG {
         margin-left:auto;

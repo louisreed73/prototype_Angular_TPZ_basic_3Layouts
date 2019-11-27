@@ -19,7 +19,7 @@
     }
 }
 
-@media only screen and (min-width:576px) {
+@media only screen and (min-width:768px) {
 
     .c_navMobile {
         width: $anchonavMobile;
@@ -33,7 +33,7 @@
 
 }
 
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:960px) {
 
    .c_navMobile {
         width: 100vw;   

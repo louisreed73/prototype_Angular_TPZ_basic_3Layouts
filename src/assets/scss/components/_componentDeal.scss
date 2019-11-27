@@ -1,74 +1,77 @@
-
-
 .c_Deal {
-    background:rgba(255, 255, 255, 1);
-    transition:box-shadow .25s ease-in-out;
-    font-size:1.8rem;
+    background: rgba(255, 255, 255, 1);
+    transition: box-shadow .25s ease-in-out;
+    font-size: 1.8rem;
 
     &:hover {
         box-shadow: $sombraCajaComp;
     }
 
-&__Content_image {
-    margin-bottom: 0.5rem;
-    & img {
-        width:100%;
-        height:auto;
-    }
-}
-&__nombre, &__ingred, &__Content_prec {
-    min-height:7rem;
-    padding: 1rem 1rem 0 1rem;
+    &__Content_image {
+        margin-bottom: 0.5rem;
 
-}
-
-&__nombre {
-    font-weight:600;
-    
-}
-&__ingred {
-    min-height:$minAlturaIngred;
-    font-size:.8em;
-    color:rgba(120, 131, 140,1)
-}
-&__Content_prec {
-    position:relative;
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    font-weight: 600;
-    
-    &_rule {
-        position:absolute;
-        top:0;
-        width:calc(100% - #{$anchoCajaPrecRule});
-        height:.12rem;
-        background:rgba(220, 220, 220, 1);
-        left: #{$anchoCajaPrecRule / 2}
-
-
-    }
-    
-    &_act, &_ant {
-        margin: 0 .8rem;
-        display: inline-block;
-        width: auto;
-        padding:.4rem;
-        border-radius: 1rem;
-        border:1px solid currentColor;
-    }
-    
-    &_act{
-        border:1px solid rgba(255, 255, 255, 1);
+        & img {
+            width: 100%;
+            height: auto;
+        }
     }
 
-    &_ant {
-        color:rgba(255, 0, 0, 1);
-        text-decoration:line-through;
+    &__nombre,
+    &__ingred,
+    &__Content_prec {
+        min-height: 6rem;
+        padding: 1rem 1rem 0 1rem;
+
     }
 
+    &__nombre {
+        font-weight: 600;
 
-}
+    }
+
+    &__ingred {
+        // min-height: $minAlturaIngred;
+        font-size: .8em;
+        color: rgba(120, 131, 140, 1)
+    }
+
+    &__Content_prec {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-weight: 600;
+
+        &_rule {
+            position: absolute;
+            top: 0;
+            width:calc(100% - #{$anchoCajaPrecRule});
+            height: .12rem;
+            background: rgba(220, 220, 220, 1);
+            left: #{$anchoCajaPrecRule / 2}
+        }
+
+        &_act,
+        &_ant {
+            margin: 0 .8rem;
+            display: inline-block;
+            width: auto;
+            padding: .4rem;
+            border-radius: 1rem;
+            border: 1px solid currentColor;
+        }
+
+        &_act {
+            border: 1px solid rgba(255, 255, 255, 1);
+        }
+
+        &_ant {
+            color: rgba(255, 0, 0, 1);
+            text-decoration: line-through;
+        }
+
+
+    }
 
 }
 
@@ -77,10 +80,9 @@
 
 .c_Deal--noPrecio {
 
-.c_Deal__ingred {
-    min-height: 17.2rem;
-}
+    .c_Deal__ingred {
+        min-height: 12rem;
+    }
 
 
 }
-

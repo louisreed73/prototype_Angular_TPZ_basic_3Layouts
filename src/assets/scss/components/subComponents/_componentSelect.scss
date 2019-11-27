@@ -1,20 +1,19 @@
-
-
-.c_Select{
-    color:inherit;
-    font-size:.8em;
+.c_Select {
+    color: inherit;
+    font-size: .8em;
     padding: 0 0 0 1rem;
     margin: 0 auto 1rem;
-    border:none;
-    height:3.5rem;
+    border: none;
+    height: 3.5rem;
     width: calc(100% - 2rem);
 
-    &:active,&:focus {
+    &:active,
+    &:focus {
         border: none;
         outline: 1px solid rgba(220, 220, 220, 1);
     }
 
 
-    
-   
+
+
 }

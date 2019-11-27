@@ -1,17 +1,14 @@
-
-
 .c_FoodCust {
-    background:rgba(255, 255, 255, 1);
-    transition:box-shadow .25s ease-in-out;
-    font-size:1.8rem;
+    background: rgba(255, 255, 255, 1);
+    transition: box-shadow .25s ease-in-out;
+    font-size: 1.8rem;
 
     &__icon {
-        display:inline-block;
+        display: inline-block;
         width: 1.8rem;
         height: 1.8rem;
         margin-left: .54rem;
         vertical-align: baseline;
-        /* line-height: 1.8rem; */
         position: relative;
         top: .1rem;
     }
@@ -20,35 +17,35 @@
         box-shadow: $sombraCajaComp;
     }
 
-&__Content_image {
-    margin-bottom: 0.5rem;
-    & img {
-        width:100%;
-        height:auto;
+    &__Content_image {
+        margin-bottom: 0.5rem;
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
     }
-}
-&__nombre, &__ingred {
-        min-height: 4rem;
-    padding: 0.4rem 1rem 0 1rem;
 
-}
+    &__nombre,
+    &__ingred {
+        min-height: 5.3rem;
+        padding: 0.4rem 1rem 0 1rem;
 
-&__nombre {
-    font-weight:600;
-    display: inline-block;
+    }
 
-    
-    
-}
-&__ingred {
-    min-height: 8rem;
-    font-size:.8em;
-    color:rgba(120, 131, 140,1)
-}
+    &__nombre {
+        font-weight: 600;
+        display: inline-block;
 
 
-   
 
+    }
+
+    &__ingred {
+        min-height: 14.4rem;
+        font-size: .8em;
+        color: rgba(120, 131, 140, 1)
+    }
 
 
 
@@ -57,18 +54,9 @@
 
 
 
-.c_Deal--noPrecio {
 
-.c_Deal__ingred {
-    min-height: 17.2rem;
-}
-
-
-}
 
 .cont_CustPizza {
-    background:white;
-    padding-bottom:.1rem;
-
+    background: white;
+    padding-bottom: .1rem;
 }
-
